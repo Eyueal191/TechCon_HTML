@@ -1,77 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us - TechCon 2024</title>
-  <link rel="stylesheet" href="styles.css" /> <!-- Assuming a shared stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TechCon 2024</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Contact Us</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us through the following methods:</p>
+            
+            <!-- Email -->
+            <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
 
-  <!-- Main Content Section -->
-  <main>
-    <section>
-      <h2>Get in Touch with Us</h2>
-      <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help!</p>
+            <!-- Social Media Links -->
+            <p>Follow us on social media:</p>
+            <ul>
+                <li><a href="https://facebook.com/TechCon2024" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/TechCon2024" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/TechCon2024" target="_blank">Instagram</a></li>
+            </ul>
 
-      <!-- Contact Information -->
-      <h3>Contact Information</h3>
-      <ul>
-        <!-- Correct mailto link for email -->
-        <li>Email: <a href="mailto:contact@techcon2024.com">contact@techcon2024.com</a></li>
-        <li>Follow Us on Social Media:
-          <ul>
-            <li><a href="https://facebook.com/techcon2024" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/techcon2024" target="_blank">Twitter</a></li>
-            <li><a href="https://linkedin.com/company/techcon2024" target="_blank">LinkedIn</a></li>
-          </ul>
-        </li>
-      </ul>
+            <!-- Embedded Google Maps -->
+            <h3>Conference Venue Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.267574897585!2d-79.3831827!3d43.653226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDAwJzQxLjAiTiA3OcKwMjgnMjguNiJdIjxjZGQeUglC9bAq_UF8Vh!5e0!3m2!1sen!2sus!4v1678595107322" width="600" height="450" style="border:0; width:100%;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
 
-      <!-- Embedded Google Map -->
-      <h3>Conference Venue Location</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3126.135251076943!2d-74.00597468427588!3d40.71277577933108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af5c0578f3%3A0x7aefca165adfd799!2sTimes+Square!5e0!3m2!1sen!2sus!4v1675425789354!5m2!1sen!2sus" 
-        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <!-- Contact Us Form Section -->
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="/submit_contact_form" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-      <!-- Contact Us Form -->
-      <h3>Contact Us</h3>
-      <form action="submit_form.php" method="post">
-        <!-- Name Input with Label -->
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <!-- Email Input with Label -->
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required />
-
-        <!-- Message Textarea with Label -->
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <!-- Submit Button -->
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2024 TechCon. All rights reserved.</p>
-  </footer>
-
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
 </body>
 </html>
